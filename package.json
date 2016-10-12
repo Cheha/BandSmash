@@ -1,0 +1,17 @@
+{
+  "name": "BandSmash",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+        "express" : "~4.5.1",
+        "mongoose" : "~3.8.0",
+        "body-parser" : "~1.4.2",
+        "method-override" : "~2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Chekhotskiy",
+  "license": "BSD-2-Clause"
+}
