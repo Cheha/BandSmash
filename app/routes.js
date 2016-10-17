@@ -80,7 +80,6 @@ module.exports = function(app) {
   // route to handle all angular requests
   // ('*' - catch-all routes)
   app.get('*', function(req, res){
-		console.log('server route');
   	res.sendfile('./public/index.html');
   });
 
