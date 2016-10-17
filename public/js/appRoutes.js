@@ -1,4 +1,4 @@
-angular.module('appRoutes', ['ngRoute'])
+angular.module('bsApp', ['ngRoute'])
   .config(['$routeProvider', '$locationProvider',
   function($routeProvider, $locationProvider){
     $routeProvider
