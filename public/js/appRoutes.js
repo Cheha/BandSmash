@@ -1,5 +1,5 @@
-angular.module('bsApp', ['ngRoute'])
-  .config(['$routeProvider', '$locationProvider',
+var bsApp = angular.module('bsApp', ['ngRoute'])
+  bsApp.config(['$routeProvider', '$locationProvider',
   function($routeProvider, $locationProvider){
     $routeProvider
       .when('/', {

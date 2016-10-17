@@ -71,10 +71,10 @@ module.exports = function(app) {
 	// route to handle creating goes here (app.post)
   // route to handle delete goes here (app.delete)
 
-	app.get('/songs', function(req, res){
-		console.log('server songs route');
-		res.render('./public/views/song.html');
-	});
+	// app.get('/songs', function(req, res){
+	// 	console.log('server songs route');
+	// 	res.render('./public/views/song.html');
+	// });
 
   // frontend routes
   // route to handle all angular requests
