@@ -1,0 +1,15 @@
+.audioPlayer {
+    top: 45%;
+	height: 300px;
+    width: 30%;
+    position: absolute;
+     background: rgba(240, 248, 255, 0.5);
+    display: inline-block;
+}
+
+#firstSong{
+    left: 17%;
+}
+#secondSong{
+    left: 53%;
+}

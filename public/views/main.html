@@ -1,4 +1,5 @@
 <!-- Intro Header -->
+<div style="height:100%" ng-controller="firstCtrl">
     <header class="intro">
         <div class="intro-body">
             <div class="container">
@@ -7,7 +8,7 @@
                         <h1 class="brand-heading">BandSmah</h1>
                         <p class="intro-text">Site for rating music.
                             <br>Created by Sashok.</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
+                    	<a id="btnToDiv" data-toggle="modal" data-target="#myModal" ng-click="showAudio = !showAudio" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
@@ -15,6 +16,9 @@
             </div>
         </div>
     </header>
+
+<div ng-show="showAudio" id="firstSong" class="audioPlayer"></div>
+<div ng-show="showAudio" id="secondSong" class="audioPlayer"></div>
 
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
@@ -41,3 +45,4 @@
         </div>
         
     </section>
+</div>
