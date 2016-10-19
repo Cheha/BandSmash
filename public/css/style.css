@@ -43,3 +43,11 @@
 	transition:0s linear all;
 	opacity:0;
 }
+
+.customBtns {
+    bottom: 0;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    color: black;
+}

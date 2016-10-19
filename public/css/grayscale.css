@@ -152,6 +152,7 @@ a:focus {
   }
 }
 .btn-circle {
+  background-image: url('../images/32.png');
   width: 70px;
   height: 70px;
   margin-top: 15px;
@@ -167,6 +168,7 @@ a:focus {
 }
 .btn-circle:hover,
 .btn-circle:focus {
+  background-image: url('../images/bg.jpg');
   outline: none;
   color: white;
   background: rgba(255, 255, 255, 0.1);

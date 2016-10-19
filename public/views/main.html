@@ -7,16 +7,38 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">BandSmash</h1>
                     	<a id="btnToDiv" ng-hide="showAudio" ng-click="showAudio = true" class="btn btn-circle page-scroll">
+                        </a>
                         <a id="btnToDiv" ng-hide="!showAudio" ng-click="showAudio = false" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
 
-<div ng-if="showAudio" id="firstSong" class="audioPlayer"></div>
-<div ng-if="showAudio" id="secondSong" class="audioPlayer"></div>
+<div ng-if="showAudio" id="firstSong" class="audioPlayer">
+    <div ng-repeat="song in songs">
+        <h2 music-player="play" add-song="song">{{ song.title }}</h2>
+    </div>
+    <div class="customBtns">
+         <button play-music>Play</button>
+        
+        <button pause-music>Pause</button>
+        
+        <button stop-music>Stop</button>
+    </div>  
+</div>
+<div ng-if="showAudio" id="secondSong" class="audioPlayer">
+    <div ng-repeat="song in songs">
+        <h2 music-player="play" add-song="song">{{ song.title }}</h2>
+    </div>
+    <div class="customBtns">
+        <button play-music>Play</button>
+        
+        <button pause-music>Pause</button>
+        
+        <button stop-music>Stop</button>
+    </div>
+</div>
     </header>
 
 

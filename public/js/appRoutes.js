@@ -1,4 +1,4 @@
-var bsApp = angular.module('bsApp', ['ngRoute' , 'ngAnimate'])
+var bsApp = angular.module('bsApp', ['ngRoute' , 'ngAnimate','angularSoundManager'])
   bsApp.config(['$routeProvider', '$locationProvider',
   function($routeProvider, $locationProvider){
     $routeProvider
