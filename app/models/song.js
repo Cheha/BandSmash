@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 module.exports = mongoose.model('Song', {
   title: {
     type: String,
-		default: ''
+    default: ''
   },
   artist: {
     type: String,
