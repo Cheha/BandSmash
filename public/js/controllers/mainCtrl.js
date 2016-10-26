@@ -3,6 +3,7 @@ bsApp.controller('MainController', function($scope, $http) {
     $http.get('api/songs')
     		.success(function(res){
     			$scope.songs = res;
+    			console.log(res)
     		});
     
   });

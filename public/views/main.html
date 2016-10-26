@@ -19,9 +19,7 @@
     <div ng-if="showAudio" id="firstSong" class="audioPlayer">
         <div class="row">
             <div class="col-md-12">
-                <ul>
-                        <button music-player="play" add-song="songs[2]">{{ songs[2].title }}</button>
-                </ul>
+                <button music-player="play" add-song="songs[1]">{{ songs[1].title }}</button>
             </div>
         </div>
         <div class="row">
@@ -30,7 +28,7 @@
                 <sound-manager></sound-manager>
 
                 <p>
-                    {{ currentPlaying.title }} by {{ currentPlaying.artist }} ({{ currentPostion }} / {{ currentDuration }})
+                    Currently Playing: {{ currentPlaying.title }} by {{ currentPlaying.artist }} ({{ currentPostion }} / {{ currentDuration }})
                 </p>
 
                 <div class="seekBase" seek-track>
@@ -42,6 +40,7 @@
                 <button pause-music>Pause</button>
                 -
                 <button stop-music>Stop</button>
+
                 <br/>Volume: {{ volume }} -
                 <button music-volume data-type="increase">+</button>
                 -
@@ -49,20 +48,17 @@
             </div>
         </div>
     </div>
-         
+ <!-- </div>	 -->
     <div ng-if="showAudio" id="secondSong" class="audioPlayer">
        <div class="row">
             <div class="col-md-12">
                 <ul>
-                        <button music-player="play" add-song="songs[0]">{{ songs[0].title }}</button>
+                        <button music-player="play" add-song="songs[2]">{{ songs[2].title }}</button>
                 </ul>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <!-- init soundManager2 player -->
-                <sound-manager1></sound-manager1>
-
                 <p>
                     {{ currentPlaying.title }} by {{ currentPlaying.artist }} ({{ currentPostion }} / {{ currentDuration }})
                 </p>
@@ -83,7 +79,7 @@
             </div>
         </div>>
     </div> 
-    </div>
+    
     </header>
 
 
